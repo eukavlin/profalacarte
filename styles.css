@@ -84,7 +84,6 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    position: relative;
 }
 
 img {
@@ -224,15 +223,12 @@ button:active {
 
 
 footer {
-  bottom: 0;
-  left: 0;
   width: 100%;
   background: #333;
   color: #FFF;
   font-weight: lighter;
   height: 75px;
   align-items: center;
-  position: absolute;
 }
 
 .container {
