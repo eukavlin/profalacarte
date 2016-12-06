@@ -79,6 +79,8 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    position: relative;
 }
 
 img {
@@ -88,6 +90,10 @@ img {
 .icon {
     font-size: 1.75em;
     padding: 0 10px;
+}
+
+.flex {
+  display: flex;
 }
 
 .flexsb {
@@ -147,6 +153,7 @@ nav {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    font-weight: 300;
 }
 
 nav ul {
@@ -214,9 +221,37 @@ button:active {
 
 footer {
   bottom: 0;
-  background: #444;
+  left: 0;
+  width: 100%;
+  background: #333;
   color: #FFF;
   font-weight: lighter;
   height: 75px;
   align-items: center;
+  position: absolute;
+}
+
+.container {
+}
+
+.menuLeft {
+  background-color: #aaf0ff;
+  padding: 20px;
+  flex: 1;
+  height: auto;
+}
+
+section p {
+  border-left: 5px solid #0bf;
+  padding: 5px;
+}
+
+section p button {
+  width: 100%;
+  margin: 5px;
+}
+
+.articlesRight {
+  flex: 4;
+
 }
