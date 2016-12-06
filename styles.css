@@ -1,3 +1,7 @@
+html {
+  min-height: 100vh;
+}
+
 @charset "UTF-8";
 @font-face {
     font-family: "font-icon";
@@ -232,6 +236,7 @@ footer {
 }
 
 .container {
+  min-height: 100vh;
 }
 
 .menuLeft {
@@ -253,5 +258,36 @@ section p button {
 
 .articlesRight {
   flex: 4;
+  padding: 20px;
+}
 
+.articlesRight article {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.articlesRight article h4{
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+
+
+.img {
+  flex: 1;
+}
+
+.text {
+  flex: 3;
+  padding: 10px;
+}
+
+.text a {
+  justify-content: flex-end;
+  font-size: 0.9;
+}
+.text a:hover {
+  font-weight: bold;
 }
