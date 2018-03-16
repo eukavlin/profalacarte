@@ -3,40 +3,36 @@
 
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" media="screen" title="no title">
     <title>Prof @ la carte</title>
 </head>
 
 <body>
     <header>
-        <div class="topheader flexsb">
-            <div class="left flexc">
-                <div data-icon="a" class="icon"></div>
-                <div class="toptext">Prof @ la carte</div>
-            </div>
-            <div class="center flexcc">
-              <img src="img/logo.png" alt="Logo Prof @ la carte" />
+            <div class="left">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo Prof @ la carte" class="logo"/>
+                </a>
+                <h1 class="toptext">Prof @ la carte</h1>
             </div>
             <div class="right">
-                <p class="toptext">
-                    Bienvenue !
-                </p>
-            </div>
-        </div>
-        <nav>
-            <ul class="flexcc">
-                <li><a href="#">Créer un compte</a></li>
-                <li> Se connecter
+                <nav>
                     <ul>
-                        <li><input type="text" name="name" placeholder="Nom d'utilisateur"></li>
-                        <li><input type="password" name="name" placeholder="Password"></li>
-                        <li><a href="profile.html"><button type="button" name="button">Connexion</button></a></li>
+                        <li class="connect"> Se connecter
+                            <ul>
+                                <li><input type="text" name="name" placeholder="Nom d'utilisateur"></li>
+                                <li><input type="password" name="name" placeholder="Password"></li>
+                                <li><a href="profile.html">Connexion</a></li>
+                            </ul>
+                        </li>
+                        <li class="create"><a href="#">Créer un compte</a></li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+
     </header>
+    <div class="polytech">
+    </div>
 
     <div class="container flex">
         <div class="menuLeft">
@@ -60,7 +56,7 @@
         </div>
         <div class="articlesRight">
             <article>
-                <h4>L'Université Savoie Mont-Blanc rejoint les partenaires de Prof @ la carte !</h4>
+                <h2>L'Université Savoie Mont-Blanc rejoint les partenaires de Prof @ la carte !</h2>
                 <div class="flex">
                     <div class="img">
                         <img src="img/1.jpg" alt="Img1" />
@@ -72,7 +68,7 @@
                 </div>
             </article>
             <article>
-                <h4>L'Université Savoie Mont-Blanc rejoint les partenaires de Prof @ la carte !</h4>
+                <h2>L'Université Savoie Mont-Blanc rejoint les partenaires de Prof @ la carte !</h2>
                 <div class="flex">
                     <div class="img">
                         <img src="img/1.jpg" alt="Img1" />
@@ -84,7 +80,7 @@
                 </div>
             </article>
             <article>
-                <h4>L'Université Savoie Mont-Blanc rejoint les partenaires de Prof @ la carte !</h4>
+                <h2>L'Université Savoie Mont-Blanc rejoint les partenaires de Prof @ la carte !</h2>
                 <div class="flex">
                     <div class="img">
                         <img src="img/1.jpg" alt="Img1" />

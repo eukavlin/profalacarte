@@ -1,322 +1,341 @@
-html {
-  min-height: 100vh;
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Old+Standard+TT:400,700&subset=latin-ext');
+
+* {
+    box-sizing : border-box;
 }
 
-@charset "UTF-8";
 @font-face {
-    font-family: "font-icon";
-    src: url("fonts/font-icon.eot");
-    src: url("fonts/font-icon.eot?#iefix") format("embedded-opentype"), url("fonts/font-icon.woff") format("woff"), url("fonts/font-icon.ttf") format("truetype"), url("fonts/font-icon.svg#font-icon") format("svg");
-    font-weight: normal;
-    font-style: normal;
+    font-family : "font-icon";
+    src         : url("fonts/font-icon.eot");
+    src         : url("fonts/font-icon.eot?#iefix") format("embedded-opentype"), url("fonts/font-icon.woff") format("woff"), url("fonts/font-icon.ttf") format("truetype"), url("fonts/font-icon.svg#font-icon") format("svg");
+    font-weight : normal;
+    font-style  : normal;
 }
 
 [data-icon]:before {
-    font-family: "font-icon" !important;
-    content: attr(data-icon);
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-variant: normal !important;
-    text-transform: none !important;
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family             : "font-icon" !important;
+    content                 : attr(data-icon);
+    font-style              : normal !important;
+    font-weight             : normal !important;
+    font-variant            : normal !important;
+    text-transform          : none !important;
+    speak                   : none;
+    line-height             : 1;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "font-icon" !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-variant: normal !important;
-    text-transform: none !important;
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family             : "font-icon" !important;
+    font-style              : normal !important;
+    font-weight             : normal !important;
+    font-variant            : normal !important;
+    text-transform          : none !important;
+    speak                   : none;
+    line-height             : 1;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
 }
 
 .icon-home:before {
-    content: "\61";
+    content : "\61";
 }
 
 .icon-power-off:before {
-    content: "\62";
+    content : "\62";
 }
 
 .icon-user:before {
-    content: "\63";
+    content : "\63";
 }
 
 .icon-settings:before {
-    content: "\64";
+    content : "\64";
 }
 
 .icon-newspaper:before {
-    content: "\65";
+    content : "\65";
 }
 
 .icon-filter:before {
-    content: "\66";
+    content : "\66";
 }
 
 .icon-painting-pallet-streamline:before {
-    content: "\67";
+    content : "\67";
 }
 
 .icon-building-o:before {
-    content: "\68";
+    content : "\68";
 }
 
 .icon-bars:before {
-    content: "\69";
+    content : "\69";
 }
 
 ul, li {
-    list-style-type: none;
+    list-style-type : none;
 }
 
-
-
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
+    padding     : 0;
+    margin      : 0;
+    font-family : 'News Cycle', sans-serif;
 }
 
 img {
-    width: 100%
+    width : 100%
 }
 
 .icon {
-    font-size: 1.75em;
-    padding: 0 10px;
+    font-size : 1.75em;
+    padding   : 0 10px;
+}
+
+/* header */
+
+header {
+    display         : flex;
+    justify-content : space-between;
+    background      : #FFF;
+    color           : #333;
+    font-family     : 'Roboto', sans-serif;
+    font-weight     : bolder;
 }
 
 .flex {
-  display: flex;
+    display : flex;
 }
 
-.flexsb {
-    display: flex;
-    justify-content: space-between;
+.left, .right {
+    display     : flex;
+    align-items : center;
 }
 
-.flexsa {
-  display: flex;
-  justify-content: space-around;
+.left {
+    float       : left;
+    font-family : 'Old Standard TT', serif;
+    font-size   : 20px;
 }
 
-.flexc {
-    display: flex;
-    align-items: center;
-}
-
-.flexcc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left, .right, .center {
-    padding: 1%;
-    width: 30vw;
+.left img {
+    display : inline-block;
+    margin  : 5px 20px;
+    width   : 80px;
 }
 
 .right {
-    justify-content: flex-end;
-    text-align: right;
-    padding-right: 2%;
+    float  : right;
+    margin : 5px 20px;
+}
+
+.right .create {
+    border : 3px solid black;
+}
+
+.right .create a {
+    color   : black;
+    padding : 5px 10px;
+}
+
+.right .connect {
+    position : relative;
+    border   : 3px solid transparent;
+    height   : 50px;
+}
+
+.right .connect ul {
+    background : #FFF;
+}
+
+.right .connect a {
+    transition : all 0.2s;
+}
+
+.right .connect a:hover {
+    color : #0bf;
+}
+
+.toptext span {
+    font-weight : lighter;
+}
+
+.polytech {
+
+    background-size : cover;
+    background      : fixed url("img/polytech.jpg") center;
+    height          : 300px;
 }
 
 .icon.right {
-  width: 10%;
-  font-size: 25px;
+    width     : 10%;
+    font-size : 25px;
 }
 
-.topheader {
-    background: linear-gradient(0deg, #000 30%, #555);
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size: 3vh;
+[data-icon="b"], .lognav li {
+    color      : #444;
+    transition : color 0.5s;
 }
 
-.topheader img{
-    width: 80px;
-}
-
-[data-icon="a"],[data-icon="b"] {
-  color: #FFF;
-  transition: color 0.5s;
-}
-
-[data-icon="a"]:hover,[data-icon="b"]:hover {
-  color: #0bf;
-  transition: color 0.5s;
-}
- .toptext {
-    font-size: 20px;
-}
-
-.center.flexcc span {
-  padding: 10px 20px;
-
-  font-weight: 300;
+[data-icon="b"]:hover, .lognav li:hover {
+    color      : #0bf;
+    transition : color 0.5s;
+    cursor     : pointer;
 }
 
 nav {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    font-weight: 300;
+    width       : 100%;
+    text-align  : center;
+    font-weight : 600;
 }
 
 nav ul {
-    padding: 0;
-    margin: 0;
-    font-size: 13px;
-    align-items: center;
+    padding     : 0;
+    margin      : 0;
+    font-size   : 13px;
+    align-items : center;
 }
 
 nav ul li {
-    position: relative;
-    flex: 1;
-    padding: 10px;
-    background-color: #EEE;
-    color: #444;
-    height: 25px;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(217, 217, 217, 1);
-    -moz-box-shadow: 0px 5px 5px 0p.btnx rgba(217, 217, 217, 1);
-    box-shadow: 0px 5px 5px 0px rgba(217, 217, 217, 1);
+    display    : inline-block;
+    padding    : 10px;
+    color      : black;
+    min-height : 25px;
 }
 
-
-nav ul.flexcc li a{
-  text-decoration: none;
-  color: #444;
+nav ul li a {
+    text-decoration : none;
+    color           : #444;
 }
 
 nav ul li ul {
-    display: none;
+    height           : 0;
+    display          : none;
+    transition       : height 0.2s;
+    transition-delay : 0.2s;
 }
 
 nav ul li:hover ul {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 38px;
-    left: 0;
+    height     : 125px;
+    display    : block;
+    position   : absolute;
+    width      : 200%;
+    top        : 100%;
+    left       : 0;
+    box-shadow : 0 4px 4px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 nav ul li:hover ul li {
-    height: auto;
-    padding: 5px;
+    height  : auto;
+    padding : 5px;
 }
 
 nav ul li:hover ul li button {
-    width: 60%;
+    width : 95%;
 }
 
 nav ul li:hover ul li input {
-    width: 75%;
-    padding: 5px;
-    border-radius: 5px;
+    width         : 95%;
+    padding       : 5px;
+    border-radius : 5px;
 }
 
 button {
-    padding: 5px 10px;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px;
-    background-color: #DDDDDD;
-    cursor: pointer;
+    padding          : 5px 10px;
+    box-shadow       : 0 1px 2px 0 hsla(0, 0%, 0%, 0.1);
+    border           : none;
+    background-color : #00bbff;
+    cursor           : pointer;
+    color            : #FFF;
 }
 
 button:active {
-    box-shadow: inset 1px 1px 5px grey;
+    box-shadow : inset 1px 1px 5px;
 }
 
-
 footer {
-  width: 100%;
-  background: #333;
-  color: #FFF;
-  font-weight: lighter;
-  height: 75px;
-  align-items: center;
+    width       : 100%;
+    background  : #333;
+    color       : #FFF;
+    height      : 75px;
+    align-items : center;
 }
 
 .container {
-  min-height: 100vh;
-  flex-direction: row;
+    min-height     : 100vh;
+    flex-direction : row;
 }
 
 .menuLeft {
-  background-color: #aaf0ff;
-  padding: 20px;
-  flex: 1;
-  height: auto;
+    background-color : #aaf0ff;
+    padding          : 20px;
+    flex             : 1;
+    height           : auto;
 }
 
 section p {
-  border-left: 5px solid #0bf;
-  padding: 5px;
-  font-size: 16px;
+    border-left : 5px solid #0bf;
+    padding     : 5px;
+    font-size   : 16px;
 }
 
- section h3 {
-  font-size: 18px;
+section h3 {
+    font-size : 18px;
 }
 
 section p button {
-  width: 100%;
-  margin: 5px;
+    width  : 100%;
+    margin : 5px;
 }
 
 .articlesRight {
-  flex: 4;
-  padding: 10px;
+    flex    : 4;
+    padding : 10px;
 }
 
 .articlesRight article {
-  margin: 10px 0;
-  border: 1px solid black;
-  padding: 20px;
+    margin     : 10px 0;
+    box-shadow : 0 2px 4px 0 hsla(0, 0%, 0%, 0.1);
+    padding    : 20px;
 }
 
-.articlesRight article h4{
-  width: 100%;
-  padding-bottom: 20px;
-  margin: 0;
+.articlesRight article h2 {
+    font-family    : 'Old Standard TT', serif;
+    width          : 100%;
+    padding-bottom : 20px;
+    margin         : 0;
 }
-
-
 
 .img {
-  flex: 1;
+    flex : 1;
 }
 
 .text {
-  flex: 3;
-  padding: 10px;
+    flex    : 3;
+    padding : 10px;
 }
 
 .text a {
-  justify-content: flex-end;
-  font-size: 0.9;
+    justify-content : flex-end;
 }
+
 .text a:hover {
-  font-weight: bold;
+    font-weight : bold;
 }
 
 a {
-  text-decoration: none;
+    text-decoration : none;
+}
+
+footer {
+    display         : flex;
+    justify-content : space-around;
 }
 
 @media only screen and (max-width : 768px) {
-  .container {
-    flex-flow: column-reverse;
-  }
+    .container {
+        flex-flow : column-reverse;
+    }
 }
